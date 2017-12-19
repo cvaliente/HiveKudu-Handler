@@ -16,8 +16,6 @@
 
 package org.apache.hadoop.hive.kududb.KuduHandler;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hive.serde2.SerDe;
 import org.apache.hadoop.hive.serde2.SerDeException;
@@ -27,12 +25,15 @@ import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorFactory;
 import org.apache.hadoop.hive.serde2.objectinspector.StructField;
 import org.apache.hadoop.hive.serde2.objectinspector.StructObjectInspector;
 import org.apache.hadoop.io.Writable;
-import org.kududb.Type;
+import org.apache.kudu.Type;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 
 /**
@@ -41,7 +42,7 @@ import java.util.Properties;
 
 public class HiveKuduSerDe implements SerDe {
 
-    private static final Log LOG = LogFactory.getLog(HiveKuduSerDe.class);
+    private static final Logger LOG = LoggerFactory.getLogger(HiveKuduSerDe.class);
 
     private HiveKuduWritable cachedWritable; //Currently Update/Delete not supported from Hive.
 
@@ -66,6 +67,7 @@ public class HiveKuduSerDe implements SerDe {
 
         if (columnNameProperty.length() == 0
                 && columnTypeProperty.length() == 0) {
+            // TODO
             //This is where we will implement option to connect to Kudu and get the column list using Serde.
         }
 

@@ -16,16 +16,16 @@
 
 package org.apache.hadoop.hive.kududb.KuduHandler;
 
+import java.util.concurrent.TimeUnit;
 import org.apache.hadoop.hive.serde2.SerDeException;
 import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector;
 import org.apache.hadoop.hive.serde2.objectinspector.PrimitiveObjectInspector;
 import org.apache.hadoop.hive.serde2.objectinspector.primitive.PrimitiveObjectInspectorFactory;
-import org.kududb.Type;
+import org.apache.kudu.Type;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-import java.sql.Timestamp;
 
 
 /**
@@ -55,7 +55,8 @@ public class HiveKuduBridgeUtils {
                 return Type.DOUBLE;
 
             case "timestamp":
-                return Type.TIMESTAMP;
+                // TODO: check right type
+                return Type.UNIXTIME_MICROS;
 
             case "boolean":
                 return Type.BOOL;
@@ -86,8 +87,8 @@ public class HiveKuduBridgeUtils {
                 return PrimitiveObjectInspectorFactory.javaIntObjectInspector;
             case INT64:
                 return PrimitiveObjectInspectorFactory.javaLongObjectInspector;
-            case TIMESTAMP:
-                return PrimitiveObjectInspectorFactory.javaTimestampObjectInspector;
+            case UNIXTIME_MICROS:
+                return PrimitiveObjectInspectorFactory.javaLongObjectInspector;
             case BINARY:
                 return PrimitiveObjectInspectorFactory.javaByteArrayObjectInspector;
             default:
@@ -118,22 +119,22 @@ public class HiveKuduBridgeUtils {
             case STRING:
                 return in.readUTF();
             case FLOAT:
-                return Float.valueOf(in.readFloat());
+                return in.readFloat();
             case DOUBLE:
-                return Double.valueOf(in.readDouble());
+                return in.readDouble();
             case BOOL:
-                return Boolean.valueOf(in.readBoolean());
+                return in.readBoolean();
             case INT8:
-                return Byte.valueOf(in.readByte());
+                return in.readByte();
             case INT16:
-                return Short.valueOf(in.readShort());
+                return in.readShort();
             case INT32:
-                return Integer.valueOf(in.readInt());
+                return in.readInt();
             case INT64:
-                return Long.valueOf(in.readLong());
-            case TIMESTAMP: {
+                return in.readLong();
+            case UNIXTIME_MICROS: {
                 long time = in.readLong();
-                return new Timestamp(time);
+                return TimeUnit.MILLISECONDS.toMicros(time);
             }
             case BINARY: {
                 int size = in.readInt();
@@ -176,22 +177,22 @@ public class HiveKuduBridgeUtils {
             }
             case INT16: {
                 Short s = (Short) obj;
-                out.writeShort(s.shortValue());
+                out.writeShort(s);
                 return;
             }
             case INT32: {
                 Integer i = (Integer) obj;
-                out.writeInt(i.intValue());
+                out.writeInt(i);
                 return;
             }
             case INT64: {
                 Long l = (Long) obj;
-                out.writeLong(l.longValue());
+                out.writeLong(l);
                 return;
             }
-            case TIMESTAMP: {
-                Timestamp time = (Timestamp) obj;
-                out.writeLong(time.getTime());
+            case UNIXTIME_MICROS: {
+                Long time = (Long) obj;
+                out.writeLong(TimeUnit.MICROSECONDS.toMillis(time));
                 return;
             }
             case BINARY: {

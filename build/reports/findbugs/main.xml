@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1513680701528" analysisTimestamp="1513680701553" release="">
+  <Project projectName="">
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableInputFormat$KuduHiveSplit.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableOutputFormat$TableRecordWriter.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableOutputFormat$Counters.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableOutputFormat$1.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableInputFormat$1.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableInputFormat$TableSplit.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableInputFormat$TableRecordReader.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableOutputFormat.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/kudu/client/HiveKuduTableInputFormat.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduBridgeUtils$1.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduBridgeUtils.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/hadoop/hive/kududb/KuduHandler/KuduStorageHandler.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduSerDe.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable.class</Jar>
+    <Jar>/home/cvaliente/git/HiveKudu-Handler/build/classes/main/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduConstants.class</Jar>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive/hive-exec/1.1.0-cdh5.12.1/c41fa19db236ca20ee0d269632e4eab86da1584/hive-exec-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-common/2.6.0-cdh5.12.1/364c5938d1f12566df98c1c9d397aa6ee84d1ae0/hadoop-common-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-mapreduce-client-common/2.6.0-cdh5.12.1/ad66f791ab5e30a89a20e9bfddfba170b3074078/hadoop-mapreduce-client-common-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.kudu/kudu-client/1.4.0-cdh5.12.1/36f621b054dd78861d3b0ec5d98ca6ba67ce5265/kudu-client-1.4.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.kudu/kudu-mapreduce/1.4.0-cdh5.12.1/4a728deeedc389b30733d4d4f9a6ec77a4c941c0/kudu-mapreduce-1.4.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive/hive-ant/1.1.0-cdh5.12.1/f6151295cbf3f197eff3ced82a2ac479fd01d65c/hive-ant-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive/hive-metastore/1.1.0-cdh5.12.1/2a9825a0c714864be56c091303fcc48df477de2e/hive-metastore-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive/hive-shims/1.1.0-cdh5.12.1/30eb20250859fa90e6635f364da9943ddd731e58/hive-shims-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.cloudera.logredactor/logredactor/1.0.3/e8c72b91246a9078a6044b06aa83c1cef76bf8bf/logredactor-1.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/log4j/apache-log4j-extras/1.2.17/85863614d82185d7e51fe21c00aa9117a523a8b6/apache-log4j-extras-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.4/8f011408269a8e42b8548687e137d8eeb56df4b4/antlr-runtime-3.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.antlr/ST4/4.0.4/467a2aa12be6d0f0f68c70eecf6714ab733027ac/ST4-4.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.9.1/35900c96dbebc85dcfbd71f4661059ebcf93c077/ant-1.9.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.4.1/b02e84a993d88568417536240e970c4b809126fd/commons-compress-1.4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.thrift/libfb303/0.9.3/5d1abb695642e88558f4e7e0d32aa1925a1fd0b7/libfb303-0.9.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.ivy/ivy/2.4.0/5abe4c24bbe992a9ac07ca563d5bd3e8d569e9ed/ivy-2.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.curator/apache-curator/2.6.0/1bbbe3a8c191ec5a63ec2eaec7988d8292ea65d2/apache-curator-2.6.0.pom</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.4/b22748b6cf9a38c9777792175507a679043cdd64/groovy-all-2.4.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.datanucleus/datanucleus-core/3.2.10/7ad66634f30d7c6a06373475e94bcfbe65e2648e/datanucleus-core-3.2.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.calcite/calcite-core/1.0.0-incubating/9c117ca4d7b780c1eb1d1e81524be06c4ad6e47e/calcite-core-1.0.0-incubating.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.calcite/calcite-avatica/1.0.0-incubating/4b0bb2caf4cef0430ee7c20b51635446b8adc5df/calcite-avatica-1.0.0-incubating.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/jline/jline/2.12/ce9062c6a125e0f9ad766032573c041ae8ecc986/jline-2.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hbase/hbase-common/1.2.0-cdh5.12.1/e1fbbaa71975c8ba8ebb8a847b18962c0899fb89/hbase-common-1.2.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-annotations/2.6.0-cdh5.12.1/be241bc7a274c08ad58b8df076bbed54671a070/hadoop-annotations-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.1.1/6719d757a98ff24a83d9d727bef9cec83f59b6e1/commons-math3-3.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/xmlenc/xmlenc/0.52/d82554efbe65906d83b3d97bd7509289e9db561a/xmlenc-0.52.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-net/commons-net/3.1/2298164a7c2484406f2aa5ac85b205d39019896f/commons-net-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty/6.1.26.cloudera.4/d59325a5ff8ff18f7543bc3fbb9d5efa0c0ff521/jetty-6.1.26.cloudera.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty-util/6.1.26.cloudera.4/b8507b7c5d3fd9a3d01775272cbf1a63f530c19d/jetty-util-6.1.26.cloudera.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-json/1.9/1aa73e1896bcc7013fed247157d7f676226eb432/jersey-json-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/tomcat/jasper-compiler/5.5.23/6d35bd7fb8c4fbc1f5401fb3678aa976d2e4c241/jasper-compiler-5.5.23.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/tomcat/jasper-runtime/5.5.23/96ca5528a93ab47b001476b74320c644beb89dde/jasper-runtime-5.5.23.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.1/63f943103f250ef1f3a4d5e94d145a0f961f5316/jsp-api-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-el/commons-el/1.0/1df2c042b3f2de0124750241ac6c886dbfa2cc2c/commons-el-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/net.java.dev.jets3t/jets3t/0.9.0/792bc96ee7e57b89f472aa0cb5a31015b9f59c96/jets3t-0.9.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-configuration/commons-configuration/1.6/32cadde23955d7681b0d94a2715846d20b425235/commons-configuration-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.8.8/dd2e90bb710ea3bc4610e24299d6a4c8dac5049b/jackson-core-asl-1.8.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.8.8/1bb32d9d2527c083a56e234acca49a48d3c65c8/jackson-mapper-asl-1.8.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.avro/avro/1.7.6-cdh5.12.1/cb4bdf357034ee75e971ca606c806e86d115b1e/avro-1.7.6-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/2.5.0/a10732c76bfacdbd633a7eb0f7968b1059a65dfa/protobuf-java-2.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-auth/2.6.0-cdh5.12.1/ceeddc328437334be410a0a3c1de9344f7ee97bc/hadoop-auth-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.42/a86104b0f2e0c0bab5b0df836065823a99b5e334/jsch-0.1.42.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.7.1/a591dfc085db3e9d4d480381cc7e6ae8a26b34af/curator-client-2.7.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.7.1/a2c180efc6a38a4f8c9197eb35bb4eb5716cd2fa/curator-recipes-2.7.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.htrace/htrace-core4/4.0.1-incubating/f4ef727cb4675788ac66f48e217020acc1690960/htrace-core4-4.0.1-incubating.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-common/2.6.0-cdh5.12.1/e559191b4f0e3f4d4551832487effc8a8f7c7c75/hadoop-yarn-common-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-client/2.6.0-cdh5.12.1/1e2b4bc1b67498225345caf46415ff9c1fed7018/hadoop-yarn-client-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-mapreduce-client-core/2.6.0-cdh5.12.1/8667574b9b813143502ce573af46e11933368674/hadoop-mapreduce-client-core-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-common/2.6.0-cdh5.12.1/33dac7c0341bb65172502f607692c7cad0e49c8c/hadoop-yarn-server-common-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.google.inject.extensions/guice-servlet/3.0/610cde0e8da5a8b7d8efb8f0b8987466ffebaaf9/guice-servlet-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.5.Final/9ca7d55d246092bddd29b867706e2f6c7db701a0/netty-3.10.5.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.kudu/interface-annotations/1.4.0-cdh5.12.1/97d364c9f86b104a222c191b56505d4a32318b21/interface-annotations-1.4.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.stumbleupon/async/1.4.1/25b9507a58570c349d32a80e395bc29da091059c/async-1.4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.velocity/velocity/1.5/9f306baf7523ffc0e81a6353d08a584d254133b/velocity-1.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive/hive-serde/1.1.0-cdh5.12.1/d14f7e211c100974747d306ac0fe2c3d62f29c4e/hive-serde-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.jolbox/bonecp/0.8.0.RELEASE/cec24ee9345b3678472bb1b8fdd6aa6b9428beb8/bonecp-0.8.0.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.11.1.1/df4b50061e8e4c348ce243b921f53ee63ba9bbe1/derby-10.11.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.datanucleus/datanucleus-api-jdo/3.2.6/cb21100ecc0d2e80dfd62067046c8a2a25a95c50/datanucleus-api-jdo-3.2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.datanucleus/datanucleus-rdbms/3.2.9/b95b6ff6ea969ab67f06754108167c4f9fadfd7e/datanucleus-rdbms-3.2.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.5.4/75b6e20c596ed2945a259cea26d7fadd298398e6/commons-pool-1.5.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-dbcp/commons-dbcp/1.4/30be73c965cc990b153a100aaaaafcf239f82d39/commons-dbcp-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.jdo/jdo-api/3.0.1/58e7a538e020b73871e232eeb064835fd98a492/jdo-api-3.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.thrift/libthrift/0.9.3/8625e8f9b6f49b881fa5fd143172c2833df1ce47/libthrift-0.9.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive.shims/hive-shims-common/1.1.0-cdh5.12.1/7b34d783a601780ecb566758f2f6eada7a8c39b9/hive-shims-common-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive.shims/hive-shims-0.23/1.1.0-cdh5.12.1/45df51b4e2464cae468a9603a8d0c3f2d8679779/hive-shims-0.23-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive.shims/hive-shims-scheduler/1.1.0-cdh5.12.1/400dab4b36d056dd79bad1c7b1ccce97674f4b9f/hive-shims-scheduler-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-jaxrs/1.8.8/502eeee4b15692ba6548db4abd9ecc9456103ac9/jackson-jaxrs-1.8.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-xc/1.8.8/aadbe7ec8c43b8737585f606343e3f4fdd3ba9dc/jackson-xc-1.8.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.antlr/stringtemplate/3.2.1/59ec8083721eae215c6f3caee944c410d2be34de/stringtemplate-3.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.9.1/7c71043ca185eaada9e36391dd022d92859327de/ant-launcher-1.9.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.0/ecff5cb8b1189514c9d1d8d68eb77ac372e000c9/xz-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.calcite/calcite-linq4j/1.0.0-incubating/4de6959910cf3a35ec7f1dc4a4168faeb89e6ccb/calcite-linq4j-1.0.0-incubating.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.pentaho/pentaho-aggdesigner-algorithm/5.1.5-jhyde/c52379c645c6c85300e645dff7c72653bf85baa2/pentaho-aggdesigner-algorithm-5.1.5-jhyde.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/eigenbase/eigenbase-properties/1.1.4/945753886102390cc7e7a3f730379265ec1c68e0/eigenbase-properties-1.1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/janino/2.7.6/37fde5de7edd5d7ebe075f03f4c083df2ac73dd8/janino-2.7.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.janino/commons-compiler/2.7.6/b71e76d942b33dfa26e4e3047ff2a774d1f917b4/commons-compiler-2.7.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hbase/hbase-protocol/1.2.0-cdh5.12.1/a5ed0dde0cd8efb4ee3754367c4877bda61ee5a0/hbase-protocol-1.2.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hbase/hbase-annotations/1.2.0-cdh5.12.1/60f480bc7d30546c92814abc1350a42ad29ef9b1/hbase-annotations-1.2.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.htrace/htrace-core/3.2.0-incubating/8797cf3230f01e8724ef27a0ed565dabb6998c64/htrace-core-3.2.0-incubating.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/a6b11447635d80757d64b355bed3c00786d86801/findbugs-annotations-1.3.9-1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.codehaus.jettison/jettison/1.1/1a01a2a1218fcf9faa2cc2a6ced025bdea687262/jettison-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.sun.xml.bind/jaxb-impl/2.2.3-1/56baae106392040a45a06d4a41099173425da1e6/jaxb-impl-2.2.3-1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/asm/asm/3.1/c157def142714c544bdea2e6144645702adf7097/asm-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.jamesmurty.utils/java-xmlbuilder/0.4/ac5962e48cdee3a0a6e1f8e00fcb594747ac5aaf/java-xmlbuilder-0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/1.8/dc6a73fdbd1fa3f0944e8497c6c872fa21dca37e/commons-digester-1.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils-core/1.8.0/175dc721f87e4bc5cc0573f990e28c3cf9117508/commons-beanutils-core-1.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.3/4a85963a752c0a2f715c3924bfc686865e7e1bc6/paranamer-2.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.0.4.1/f88b89a5a21a466aeb0ecf0c063605bd584b4947/snappy-java-1.0.4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.directory.server/apacheds-kerberos-codec/2.0.0-M15/1c16e4e477183641c5f0dd5cdecd27ec331bacb5/apacheds-kerberos-codec-2.0.0-M15.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.0/1e33fd4cca6c4a9bf3d2f638cabb504a5b5c989d/jackson-core-2.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.0/473e063d6396a1ff6e4b9c7943e604291ce18b07/jackson-databind-2.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-api/2.6.0-cdh5.12.1/18f13d2fa5c9b0862766730edd8d282928732706/hadoop-yarn-api-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.2/aeb3021ca93dde265796d82015beecdcff95bf09/jaxb-api-2.2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-client/1.9/d3c4b2b5f89db32c96ceddcb863684821910a7bb/jersey-client-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/3.0/9d84f15fe35e2c716a02979fb62f50a29f38aefa/guice-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.sun.jersey.contribs/jersey-guice/1.9/5963c28c47df7e5d6ad34cec80c071c368777f7b/jersey-guice-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.fusesource.leveldbjni/leveldbjni-all/1.8/707350a2eeb1fa2ed77a32ddb3893ed308e941db/leveldbjni-all-1.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/oro/oro/2.0.8/5592374f834645c4ae250f4c9fbb314c9369d698/oro-2.0.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hive/hive-common/1.1.0-cdh5.12.1/9e0476813dd55f0f083182f4a524c2a43e910f0/hive-common-1.1.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.twitter/parquet-hadoop-bundle/1.5.0-cdh5.12.1/3e40605101714ce07f7849908c4018a32bc84eda/parquet-hadoop-bundle-1.5.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-servlet/1.14/4b87041a59ee152757b62e47a21d5b63fde20ffe/jersey-servlet-1.14.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.transaction/jta/1.1/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-resourcemanager/2.6.0-cdh5.12.1/91c02d7acb28301d734d264a7b78dc8408f06d7d/hadoop-yarn-server-resourcemanager-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-all/1.9.5/79a8984096fc6591c1e3690e07d41be506356fa5/mockito-all-1.9.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.7.0/5675fd96b29656504b86029551973d60fb41339b/commons-beanutils-1.7.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.directory.server/apacheds-i18n/2.0.0-M15/71c61c84683152ec2a6a65f3f96fe534e304fa22/apacheds-i18n-2.0.0-M15.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.directory.api/api-asn1-api/1.0.0-M20/5e6486ffa3125ba44dc410ead166e1d6ba8ac76d/api-asn1-api-1.0.0-M20.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.directory.api/api-util/1.0.0-M20/a871abf060b3cf83fc6dc4d7e3d151fce50ac3cb/api-util-1.0.0-M20.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.xml.stream/stax-api/1.0-2/d6337b0de8b25e53e81b922352fbea9f9f57ba0b/stax-api-1.0-2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu.inject/cglib/2.2.1-v20090111/7ce5e983fd0e6c78346f4c9cbfa39d83049dda2/cglib-2.2.1-v20090111.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.1/905075e6c80f206bbe6cf1e809d2caa69f420c76/commons-lang3-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.aggregate/jetty-all/7.6.0.v20120127/47bb68e3837e5c6422138dd1e0d4d75c60dce87a/jetty-all-7.6.0.v20120127.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.1/f5bfc718c95a7b1d3c371bb02a188a4df18361a9/joda-time-2.8.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.codahale.metrics/metrics-core/3.0.2/c6a7fb32776e984b64ff1a548e3044238ea5a931/metrics-core-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.codahale.metrics/metrics-jvm/3.0.2/d0c6032905a3c6793c3ddcfade79e2b5f3ec1e25/metrics-jvm-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.codahale.metrics/metrics-json/3.0.2/46198fe0284104519b60ff2ad49f71c98ba942f2/metrics-json-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-applicationhistoryservice/2.6.0-cdh5.12.1/d633948c32663fc1c97cb2bfd421d0f91fb98684/hadoop-yarn-server-applicationhistoryservice-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-web-proxy/2.6.0-cdh5.12.1/97b1f8ff84247d50c16fb8f3e78dc883902ca95c/hadoop-yarn-server-web-proxy-2.6.0-cdh5.12.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/aabab3165b8ea936b9360abbf448459c0d04a5a4/geronimo-jta_1.1_spec-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.1/8b7bc69010655425dabf091b51d1e90b4de36715/mail-1.4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jaspic_1.0_spec/1.0/44b95be7dae1147716dce5336419eafade880756/geronimo-jaspic_1.0_spec-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-annotation_1.0_spec/1.1.1/47caa799389f69d297b86bf90523d431599c3796/geronimo-annotation_1.0_spec-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/asm/asm-commons/3.1/1b607fbfe7889c6fdff1b7c16439ade0a60869ac/asm-commons-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/asm/asm-tree/3.1/c9a5d4334ddf194ea492f22107d45119a5c5322f/asm-tree-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.5/6edffc576ce104ec769d954618764f39f0f0f10d/slf4j-log4j12-1.7.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-httpclient/commons-httpclient/3.1/964cd74171f427720480efdec40a7c7f6e58426a/commons-httpclient-3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.8.0-beta0/f90ef27de5a997d30c169cb706835e32d724ca96/slf4j-api-1.8.0-beta0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/16.0.1/5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5/guava-16.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.6/1b2502e29da1ebaade2357cd1de35a855fa3755/zookeeper-3.4.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.4.1/16d0bc512222f1253ee6b64d389c84e22f697f0/httpclient-4.4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.7.1/8c7b1eeb78e43bb91ea737111ba3dec0512be876/curator-framework-2.7.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.1/f5aa318bda4c6c8d688c9d00b90681dcd82ce636/httpcore-4.4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-server/1.14/b1a21724c9b708ed54d42d41bb19ff45ae1d49d9/jersey-server-1.14.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/cvaliente/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-core/1.14/693061de8b9b352b11e997b1dd4052677778852d/jersey-core-1.14.jar</AuxClasspathEntry>
+    <SrcDir>/home/cvaliente/git/HiveKudu-Handler/src/main/java/org/apache/kudu/client/HiveKuduTableInputFormat.java</SrcDir>
+    <SrcDir>/home/cvaliente/git/HiveKudu-Handler/src/main/java/org/apache/kudu/client/HiveKuduTableOutputFormat.java</SrcDir>
+    <SrcDir>/home/cvaliente/git/HiveKudu-Handler/src/main/java/org/apache/hadoop/hive/kududb/KuduHandler/KuduStorageHandler.java</SrcDir>
+    <SrcDir>/home/cvaliente/git/HiveKudu-Handler/src/main/java/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduSerDe.java</SrcDir>
+    <SrcDir>/home/cvaliente/git/HiveKudu-Handler/src/main/java/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable.java</SrcDir>
+    <SrcDir>/home/cvaliente/git/HiveKudu-Handler/src/main/java/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduBridgeUtils.java</SrcDir>
+    <SrcDir>/home/cvaliente/git/HiveKudu-Handler/src/main/java/org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduConstants.java</SrcDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable">
+      <SourceLine classname="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable" start="37" end="102" sourcefile="HiveKuduWritable.java" sourcepath="org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable.java"/>
+    </Class>
+    <Method classname="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable" name="&lt;init&gt;" signature="([Lorg/apache/kudu/Type;)V" isStatic="false">
+      <SourceLine classname="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable" start="41" end="44" startBytecode="0" endBytecode="82" sourcefile="HiveKuduWritable.java" sourcepath="org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable.java"/>
+    </Method>
+    <Field classname="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable" name="columnTypes" signature="[Lorg/apache/kudu/Type;" isStatic="false">
+      <SourceLine classname="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable" sourcefile="HiveKuduWritable.java" sourcepath="org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable.java"/>
+    </Field>
+    <LocalVariable name="types" register="1" pc="15" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable" start="43" end="43" startBytecode="15" endBytecode="15" sourcefile="HiveKuduWritable.java" sourcepath="org/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
+    <Class classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="443" end="656" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Class>
+    <Method classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" name="next" signature="(Lorg/apache/hadoop/io/NullWritable;Lorg/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable;)Z" isStatic="false">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="491" end="570" startBytecode="0" endBytecode="167" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="52" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="520" end="520" startBytecode="51" endBytecode="51" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.CACHING_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="o"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.PARAM_DEAD_ON_ENTRY" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_INVOKING_TOSTRING_ON_ARRAY" priority="1" rank="8" abbrev="USELESS_STRING" category="CORRECTNESS">
+    <Class classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="443" end="656" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Class>
+    <Method classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" name="&lt;init&gt;" signature="(Lorg/apache/kudu/client/HiveKuduTableInputFormat;Lorg/apache/hadoop/mapred/InputSplit;)V" isStatic="false">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="453" end="487" startBytecode="0" endBytecode="659" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Method>
+    <Method classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableSplit" name="getEndPartitionKey" signature="()[B" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableSplit" start="379" end="379" startBytecode="0" endBytecode="46" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Method>
+    <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="474" end="474" startBytecode="256" endBytecode="256" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_INVOKING_TOSTRING_ON_ARRAY" priority="1" rank="8" abbrev="USELESS_STRING" category="CORRECTNESS">
+    <Class classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="443" end="656" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Class>
+    <Method classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" name="&lt;init&gt;" signature="(Lorg/apache/kudu/client/HiveKuduTableInputFormat;Lorg/apache/hadoop/mapred/InputSplit;)V" isStatic="false">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="453" end="487" startBytecode="0" endBytecode="659" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Method>
+    <Method classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableSplit" name="getStartPartitionKey" signature="()[B" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableSplit" start="375" end="375" startBytecode="0" endBytecode="46" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Method>
+    <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="473" end="473" startBytecode="220" endBytecode="220" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+  </BugInstance>
+  <BugInstance type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN" priority="1" rank="6" abbrev="IP" category="CORRECTNESS">
+    <Class classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="443" end="656" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Class>
+    <Method classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" name="next" signature="(Lorg/apache/hadoop/io/NullWritable;Lorg/apache/hadoop/hive/kududb/KuduHandler/HiveKuduWritable;)Z" isStatic="false">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="491" end="570" startBytecode="0" endBytecode="167" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Method>
+    <LocalVariable name="o" register="1" pc="52" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="520" end="520" startBytecode="51" endBytecode="51" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="443" end="656" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Class>
+    <Field classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" name="first" signature="Z" isStatic="false">
+      <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+    </Field>
+    <SourceLine classname="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" start="451" end="451" startBytecode="18" endBytecode="18" sourcefile="HiveKuduTableInputFormat.java" sourcepath="org/apache/kudu/client/HiveKuduTableInputFormat.java"/>
+  </BugInstance>
+  <Errors errors="1" missingClasses="0">
+    <Error>
+      <ErrorMessage>Cannot open codebase filesystem:/home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.curator/apache-curator/2.6.0/1bbbe3a8c191ec5a63ec2eaec7988d8292ea65d2/apache-curator-2.6.0.pom</ErrorMessage>
+      <Exception>java.io.IOException: Wrong magic bytes of 3c3f786d for zip file /home/cvaliente/.gradle/caches/modules-2/files-2.1/org.apache.curator/apache-curator/2.6.0/1bbbe3a8c191ec5a63ec2eaec7988d8292ea65d2/apache-curator-2.6.0.pom of 30359 bytes</Exception>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ZipFileCodeBase.&lt;init&gt;(ZipFileCodeBase.java:87)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory.makeZipCodeBase(ZipCodeBaseFactory.java:39)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassFactory.createFilesystemCodeBase(ClassFactory.java:121)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.FilesystemCodeBaseLocator.openCodeBase(FilesystemCodeBaseLocator.java:77)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.processWorkList(ClassPathBuilder.java:607)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.build(ClassPathBuilder.java:226)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.buildClassPath(FindBugs2.java:677)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:218)</StackTrace>
+      <StackTrace>org.gradle.api.plugins.quality.internal.findbugs.FindBugsExecuter.runFindbugs(FindBugsExecuter.java:39)</StackTrace>
+      <StackTrace>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</StackTrace>
+      <StackTrace>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</StackTrace>
+      <StackTrace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</StackTrace>
+      <StackTrace>java.lang.reflect.Method.invoke(Method.java:498)</StackTrace>
+      <StackTrace>org.gradle.process.internal.worker.request.WorkerAction.run(WorkerAction.java:87)</StackTrace>
+      <StackTrace>org.gradle.process.internal.worker.request.WorkerAction.runThenStop(WorkerAction.java:71)</StackTrace>
+      <StackTrace>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</StackTrace>
+      <StackTrace>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</StackTrace>
+      <StackTrace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</StackTrace>
+      <StackTrace>java.lang.reflect.Method.invoke(Method.java:498)</StackTrace>
+      <StackTrace>org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)</StackTrace>
+      <StackTrace>org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)</StackTrace>
+      <StackTrace>org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)</StackTrace>
+      <StackTrace>org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)</StackTrace>
+      <StackTrace>org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)</StackTrace>
+      <StackTrace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</StackTrace>
+      <StackTrace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</StackTrace>
+      <StackTrace>java.lang.Thread.run(Thread.java:748)</StackTrace>
+    </Error>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 19 Dec 2017 11:51:41 +0100" total_classes="15" referenced_classes="168" total_bugs="6" total_size="930" num_packages="2" java_version="1.8.0_151" vm_version="25.151-b12" cpu_seconds="13.94" clock_seconds="4.47" peak_mbytes="284.76" alloc_mbytes="2539.00" gc_seconds="0.09" priority_2="2" priority_1="4">
+    <PackageStats package="org.apache.hadoop.hive.kududb.KuduHandler" total_bugs="1" total_types="6" total_size="392" priority_2="1">
+      <ClassStats class="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduBridgeUtils" sourceFile="HiveKuduBridgeUtils.java" interface="false" size="87" bugs="0"/>
+      <ClassStats class="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduBridgeUtils$1" sourceFile="HiveKuduBridgeUtils.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduConstants" sourceFile="HiveKuduConstants.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduSerDe" sourceFile="HiveKuduSerDe.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.apache.hadoop.hive.kududb.KuduHandler.HiveKuduWritable" sourceFile="HiveKuduWritable.java" interface="false" size="50" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.hadoop.hive.kududb.KuduHandler.KuduStorageHandler" sourceFile="KuduStorageHandler.java" interface="false" size="165" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.kudu.client" total_bugs="5" total_types="9" total_size="538" priority_2="1" priority_1="4">
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableInputFormat" sourceFile="HiveKuduTableInputFormat.java" interface="false" size="144" bugs="0"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableInputFormat$1" sourceFile="HiveKuduTableInputFormat.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableInputFormat$KuduHiveSplit" sourceFile="HiveKuduTableInputFormat.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableInputFormat$TableRecordReader" sourceFile="HiveKuduTableInputFormat.java" interface="false" size="107" bugs="5" priority_2="1" priority_1="4"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableInputFormat$TableSplit" sourceFile="HiveKuduTableInputFormat.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableOutputFormat" sourceFile="HiveKuduTableOutputFormat.java" interface="false" size="72" bugs="0"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableOutputFormat$1" sourceFile="HiveKuduTableOutputFormat.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableOutputFormat$Counters" sourceFile="HiveKuduTableOutputFormat.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.kudu.client.HiveKuduTableOutputFormat$TableRecordWriter" sourceFile="HiveKuduTableOutputFormat.java" interface="false" size="109" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="504" invocations="1273" avgMicrosecondsPerInvocation="396" maxMicrosecondsPerInvocation="29257" standardDeviationMircosecondsPerInvocation="1098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="212" invocations="168" avgMicrosecondsPerInvocation="1262" maxMicrosecondsPerInvocation="15596" standardDeviationMircosecondsPerInvocation="2444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="193" invocations="1276" avgMicrosecondsPerInvocation="151" maxMicrosecondsPerInvocation="6975" standardDeviationMircosecondsPerInvocation="251"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="176" invocations="123" avgMicrosecondsPerInvocation="1434" maxMicrosecondsPerInvocation="20767" standardDeviationMircosecondsPerInvocation="2986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="175" invocations="168" avgMicrosecondsPerInvocation="1046" maxMicrosecondsPerInvocation="11906" standardDeviationMircosecondsPerInvocation="1830"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="162" invocations="125" avgMicrosecondsPerInvocation="1299" maxMicrosecondsPerInvocation="19330" standardDeviationMircosecondsPerInvocation="3274"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="160" invocations="521" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="4195" standardDeviationMircosecondsPerInvocation="418"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="141" invocations="116" avgMicrosecondsPerInvocation="1217" maxMicrosecondsPerInvocation="19906" standardDeviationMircosecondsPerInvocation="2529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="131" invocations="125" avgMicrosecondsPerInvocation="1051" maxMicrosecondsPerInvocation="17425" standardDeviationMircosecondsPerInvocation="2431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="126" invocations="121" avgMicrosecondsPerInvocation="1046" maxMicrosecondsPerInvocation="8830" standardDeviationMircosecondsPerInvocation="1988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="112" invocations="92" avgMicrosecondsPerInvocation="1227" maxMicrosecondsPerInvocation="20779" standardDeviationMircosecondsPerInvocation="2937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="85" invocations="123" avgMicrosecondsPerInvocation="697" maxMicrosecondsPerInvocation="17860" standardDeviationMircosecondsPerInvocation="1734"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="82" invocations="1232" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="1432" standardDeviationMircosecondsPerInvocation="112"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="80" invocations="229" avgMicrosecondsPerInvocation="349" maxMicrosecondsPerInvocation="23016" standardDeviationMircosecondsPerInvocation="1597"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="71" invocations="168" avgMicrosecondsPerInvocation="428" maxMicrosecondsPerInvocation="5919" standardDeviationMircosecondsPerInvocation="851"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="66" invocations="123" avgMicrosecondsPerInvocation="541" maxMicrosecondsPerInvocation="47113" standardDeviationMircosecondsPerInvocation="4222"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="49" invocations="168" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="4481" standardDeviationMircosecondsPerInvocation="695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="48" invocations="3085" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="26375" standardDeviationMircosecondsPerInvocation="475"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="47" invocations="168" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="6621" standardDeviationMircosecondsPerInvocation="740"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="45" invocations="168" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="5570" standardDeviationMircosecondsPerInvocation="599"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="44" invocations="168" avgMicrosecondsPerInvocation="266" maxMicrosecondsPerInvocation="3166" standardDeviationMircosecondsPerInvocation="436"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="41" invocations="123" avgMicrosecondsPerInvocation="334" maxMicrosecondsPerInvocation="7080" standardDeviationMircosecondsPerInvocation="832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="40" invocations="169" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="20173" standardDeviationMircosecondsPerInvocation="1548"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="39" invocations="168" avgMicrosecondsPerInvocation="237" maxMicrosecondsPerInvocation="5257" standardDeviationMircosecondsPerInvocation="651"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

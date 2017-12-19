@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 2016 Bimal Tandel
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ package org.apache.hadoop.hive.kududb.KuduHandler;
 
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableUtils;
-import org.kududb.Type;
+import org.apache.kudu.Type;
 
 import java.io.DataInput;
 import java.io.DataOutput;
@@ -40,7 +40,7 @@ public class HiveKuduWritable implements Writable {
 
     public HiveKuduWritable(Type[] types) {
         this.columnValues = new Object[types.length];
-        this.columnTypes = types;
+        this.columnTypes = types.clone();
     }
 
     public void clear() {
