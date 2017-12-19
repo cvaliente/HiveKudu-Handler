@@ -22,16 +22,26 @@ package org.apache.hadoop.hive.kududb.KuduHandler;
 
 public final class HiveKuduConstants {
 
-    //Table Properties
-    public static final String LIST_COLUMNS = "columns";
-    public static final String LIST_COLUMN_TYPES = "columns.types";
+    // Table Properties
+    // comma-separated list of "host:port" pairs of the masters
     public static final String MASTER_ADDRESS_NAME = "kudu.master_addresses";
+    // name of the table in kudu
     public static final String TABLE_NAME = "kudu.table_name";
+
+    // Partition and PK properties
+
+    // key columns
     public static final String KEY_COLUMNS = "kudu.key_columns";
+    // partition columns (a partition column must be part of the PK
+    public static final String PARTITION_COLUMNS = "kudu.partition_columns";
 
-    //SerDe Properties
+    // number of buckets for each partitioning column
+    public static final String BUCKETS_PREFIX = "kudu.buckets.for.";
+    public static final Integer DEFAULT_NUM_BUCKETS = 2;
 
-    //MapReduce Properties
+    // SerDe Properties
+
+    // MapReduce Properties
     public static final String MR_INPUT_TABLE_NAME = "kudu.mapreduce.input.table";
     public static final String MR_OUTPUT_TABLE_NAME = "kudu.mapreduce.output.table";
     public static final String MR_MASTER_ADDRESS_NAME = "kudu.mapreduce.master.addresses";

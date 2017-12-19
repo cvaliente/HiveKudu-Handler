@@ -2,12 +2,15 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '2.0.2'
 }
 
-apply plugin: 'findbugs'
 apply plugin: 'java'
-group = 'com.cloudera.ps.HiveKudu'
-version = '0.0.1'
+apply plugin: 'findbugs'
+shadowJar.dependsOn findbugsMain
 
-description = """"""
+
+group = 'com.trivago.kudu.hive'
+version = '0.1.0'
+
+description = "kudu SerDe for Hive"
 
 
 repositories {

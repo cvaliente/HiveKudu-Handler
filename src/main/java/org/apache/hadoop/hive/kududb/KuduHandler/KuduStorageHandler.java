@@ -31,8 +31,10 @@ import org.apache.hadoop.hive.ql.plan.ExprNodeDesc;
 import org.apache.hadoop.hive.ql.plan.TableDesc;
 import org.apache.hadoop.hive.ql.security.authorization.DefaultHiveAuthorizationProvider;
 import org.apache.hadoop.hive.ql.security.authorization.HiveAuthorizationProvider;
+import org.apache.hadoop.hive.serde.serdeConstants;
 import org.apache.hadoop.hive.serde2.Deserializer;
 import org.apache.hadoop.hive.serde2.SerDe;
+import org.apache.hadoop.hive.serde2.SerDeException;
 import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapred.InputFormat;
 import org.apache.hadoop.mapred.OutputFormat;
@@ -44,6 +46,7 @@ import org.apache.kudu.client.HiveKuduTableInputFormat;
 import org.apache.kudu.client.HiveKuduTableOutputFormat;
 
 import java.util.*;
+import org.apache.kudu.client.KuduException;
 
 /**
  * Created by bimal on 4/11/16.
@@ -128,8 +131,8 @@ public class KuduStorageHandler extends DefaultStorageHandler
         String tblName = tableDesc.getTableName();
         LOG.debug("Hive Table Name:" + tblName);
         Properties tblProps = tableDesc.getProperties();
-        String columnNames = tblProps.getProperty(HiveKuduConstants.LIST_COLUMNS);
-        String columnTypes = tblProps.getProperty(HiveKuduConstants.LIST_COLUMN_TYPES);
+        String columnNames = tblProps.getProperty(serdeConstants.LIST_COLUMNS);
+        String columnTypes = tblProps.getProperty(serdeConstants.LIST_COLUMN_TYPES);
         LOG.debug("Columns names:" + columnNames);
         LOG.debug("Column types:" + columnTypes);
 
@@ -238,12 +241,14 @@ public class KuduStorageHandler extends DefaultStorageHandler
         String tablename = getKuduTableName(tbl);
 
         try {
-            List<String> keyColumns = Arrays.asList(tbl.getParameters().get(HiveKuduConstants.KEY_COLUMNS).split("\\s*,\\s*"));
 
             List<FieldSchema> tabColumns = tbl.getSd().getCols();
-
             int numberOfCols = tabColumns.size();
+
+
             List<ColumnSchema> columns = new ArrayList<>(numberOfCols);
+            List<String> keyColumns  = Arrays.asList(tbl.getParameters()
+                    .get(HiveKuduConstants.KEY_COLUMNS).split("\\s*,\\s*"));
 
             for (FieldSchema fields : tabColumns) {
 
@@ -252,7 +257,6 @@ public class KuduStorageHandler extends DefaultStorageHandler
                         .key(keyColumns.contains(fields.getName()))
                         .nullable(!keyColumns.contains(fields.getName()))
                         .build();
-
                 columns.add(columnSchema);
             }
 
@@ -262,10 +266,25 @@ public class KuduStorageHandler extends DefaultStorageHandler
 
             CreateTableOptions createTableOptions = new CreateTableOptions();
 
-            //TODO : add support for partition and buckets
+            // adding partitions
+            List<String> partitionColumns  = Arrays.asList(tbl.getParameters()
+                .get(HiveKuduConstants.PARTITION_COLUMNS).split("\\s*,\\s*"));
+
+            for (String partitionColumn: partitionColumns) {
+                if (!keyColumns.contains(partitionColumn))
+                    throw new MetaException("all partition columns need to be part of the key column!");
+
+                Integer numberBuckets;
+                if (tbl.getParameters().containsKey(HiveKuduConstants.BUCKETS_PREFIX+partitionColumn))
+                    numberBuckets = Integer.valueOf(tbl.getParameters().get(HiveKuduConstants.BUCKETS_PREFIX+partitionColumn));
+                else
+                    numberBuckets = HiveKuduConstants.DEFAULT_NUM_BUCKETS;
+                createTableOptions.addHashPartitions(Collections.singletonList(partitionColumn), numberBuckets);
+            }
+
             client.createTable(tablename, schema, createTableOptions);
 
-        } catch (Exception se) {
+        } catch (KuduException | SerDeException se) {
             se.printStackTrace();
             throw new MetaException("Error creating Kudu table: " + tablename + ":" + se);
         } finally {
@@ -279,7 +298,21 @@ public class KuduStorageHandler extends DefaultStorageHandler
 
     @Override
     public void commitCreateTable(Table tbl) throws MetaException {
-        // Nothing to do
+
+        KuduClient client = getKuduClient(tbl.getParameters().get(HiveKuduConstants.MASTER_ADDRESS_NAME));
+        try {
+            if (!client.tableExists(getKuduTableName(tbl)))
+                throw new MetaException("table did not exist after trying to create it.");
+        }
+        catch (KuduException e) {
+            throw new MetaException("KuduException while checking if newly created table exists " + e);
+        } finally {
+            try {
+                client.shutdown();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
