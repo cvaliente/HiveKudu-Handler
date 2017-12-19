@@ -49,7 +49,7 @@ import java.util.*;
  * Created by bimal on 4/11/16.
  */
 
-@SuppressWarnings({ "deprecation", "rawtypes" })
+@SuppressWarnings({ "deprecation", "rawtypes", "RedundantThrows" })
 public class KuduStorageHandler extends DefaultStorageHandler
         implements HiveMetaHook, HiveStoragePredicateHandler {
 
@@ -57,8 +57,8 @@ public class KuduStorageHandler extends DefaultStorageHandler
 
     private Configuration conf;
 
-    private String kuduMaster;
-    private String kuduTableName;
+    // private String kuduMaster;
+    // private String kuduTableName;
 
     @Override
     public Class<? extends InputFormat> getInputFormatClass() {
@@ -164,8 +164,8 @@ public class KuduStorageHandler extends DefaultStorageHandler
                 tblProps.getProperty(HiveKuduConstants.MASTER_ADDRESS_NAME));
 
         //set class variables
-        kuduMaster = conf.get(HiveKuduConstants.MASTER_ADDRESS_NAME);
-        kuduTableName = conf.get(HiveKuduConstants.TABLE_NAME);
+        // kuduMaster = conf.get(HiveKuduConstants.MASTER_ADDRESS_NAME);
+        // kuduTableName = conf.get(HiveKuduConstants.TABLE_NAME);
 
         for (String key : tblProps.stringPropertyNames()) {
             if (key.startsWith(HiveKuduConstants.MR_PROPERTY_PREFIX)) {
@@ -266,6 +266,7 @@ public class KuduStorageHandler extends DefaultStorageHandler
             client.createTable(tablename, schema, createTableOptions);
 
         } catch (Exception se) {
+            se.printStackTrace();
             throw new MetaException("Error creating Kudu table: " + tablename + ":" + se);
         } finally {
             try {

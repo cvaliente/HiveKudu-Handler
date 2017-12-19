@@ -25,3 +25,5 @@ target/
 
 #test data
 data/
+build
+    id 'java'
